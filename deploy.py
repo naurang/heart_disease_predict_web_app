@@ -2,6 +2,8 @@ from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
+
+server = app.server
 model = pickle.load(open('heart_disease_prediction_model.pkl', 'rb'))
 
 @app.route('/')
