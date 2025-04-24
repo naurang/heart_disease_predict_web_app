@@ -3,10 +3,6 @@ import pickle
 
 app = Flask(__name__)
 
-
-# this line of code needed to load the server
-server = app.server
-
 model = pickle.load(open('heart_disease_prediction_model.pkl', 'rb'))
 
 @app.route('/')
