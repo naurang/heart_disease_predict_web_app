@@ -41,7 +41,7 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port=5001)
+    app.run_server(debug=True)
 # This code is a Flask web application that serves a machine learning model for heart disease prediction.
 # It loads a pre-trained model from a pickle file and uses it to make predictions based on user input from a web form.
 # The application has two routes: the home route that renders the input form and the predict route that handles the prediction logic.
